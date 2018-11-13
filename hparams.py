@@ -8,7 +8,7 @@ def f(num):
 basic_params = {
     # Comma-separated list of cleaners to run on text prior to training and eval. For non-English
     # text, you may want to use "basic_cleaners" or "transliteration_cleaners" See TRAINING_DATA.md.
-    'cleaners': 'english_cleaners', #originally korean_cleaners
+    'cleaners': 'korean_cleaners', #originally korean_cleaners
 }
 
 basic_params.update({
@@ -25,7 +25,7 @@ basic_params.update({
 
 if True:
     basic_params.update({
-        'sample_rate': 22050, #originally 24000 (krbook), 22050(lj-data), 20000(others) 
+        'sample_rate': 20000, #originally 24000 (krbook), 22050(lj-data), 20000(others) 
     })
 
 basic_params.update({
