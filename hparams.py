@@ -153,4 +153,4 @@ hparams = tf.contrib.training.HParams(**basic_params)
 def hparams_debug_string():
     values = hparams.values()
     hp = ['    %s: %s' % (name, values[name]) for name in sorted(values)]
-return 'Hyperparameters:\n' + '\n'.join(hp)
+    return 'Hyperparameters:\n' + '\n'.join(hp)
